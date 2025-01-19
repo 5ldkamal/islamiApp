@@ -2,20 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/quran_item_id"
         android:icon="@drawable/ic_quran"
         android:title="@string/quran"
         />
 
     <item
+        android:id="@+id/hadith_item_id"
         android:icon="@drawable/ic_hadith"
         android:title="@string/hadith"
         />
 
     <item
+        android:id="@+id/sebha_item_id"
         android:icon="@drawable/ic_sebha"
         android:title="@string/sebha" />
 
     <item
+        android:id="@+id/radio_item_id"
         android:icon="@drawable/ic_radio"
         android:title="@string/radio" />
 

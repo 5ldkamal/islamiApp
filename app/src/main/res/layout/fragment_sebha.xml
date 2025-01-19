@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sebha_screen_bg"
+    android:padding="16dp">
+
+    <!-- Islami Logo -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/header"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:drawablePadding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_islami_logo" />
+
+    <!-- Sebha Circle -->
+    <ImageView
+        android:id="@+id/sebha_circle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_sebha" />
+
+    <LinearLayout
+        android:id="@+id/sebha_container_id"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- Tasbeeh Text -->
+        <TextView
+            android:id="@+id/tasbeeh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="سبحان الله"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <!-- Counter Text -->
+        <TextView
+            android:id="@+id/counter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
