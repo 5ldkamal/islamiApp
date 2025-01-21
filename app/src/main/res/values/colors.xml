@@ -5,4 +5,5 @@
     <color name="goldColor">#E2BE7F</color>
     <color name="bottom_nav_active_color">#FFFFFFFF</color>
     <color name="bottom_nav_inactive_color">#FF000000</color>
+    <color name="bottom_nav_selection_color">#20202099</color>
 </resources>

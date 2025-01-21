@@ -31,6 +31,11 @@ final class MainActivity : AppCompatActivity() {
     private fun didSelectItemBottomNavigationView() {
         viewBinding.menuView.setOnItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.quran_item_id -> {
+                    showFragment(QuranFragment())
+                    true
+                }
+
                 R.id.sebha_item_id -> {
                     showFragment(SebhaFragment())
                     true
@@ -50,28 +55,3 @@ final class MainActivity : AppCompatActivity() {
     }
 }
 
-//fun parseJson(file: String): Islami {
-//    return Json.decodeFromString(file)
-//}
-
-
-//fun readRawResourceFile(context: Context, rawResId: Int): String {
-//// Open the raw resource file and read its contents
-//    val inputStream = context.resources.openRawResource(rawResId)
-//    return inputStream.bufferedReader().use { it.read() }.toString()
-//}
-////
-//// Step 3: Define data classes for the JSON structure
-//@kotlinx.serialization.Serializable
-//data class Islami(
-//    val suras: List<Sura>
-//)
-//
-//@Serializable
-//data class Sura(
-//    val id: Int,
-//    val name: String,
-//    val verses: Int,
-//    val arabicName: String
-//)
-//
