@@ -27,12 +27,11 @@ final class QuranFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var list = listOf(QuranChapterSura(1 , "mm" , verses = 12,"ew"))
         quranChaptersJsonReader = QuranChaptersJsonReader()
-         val lisss = quranChaptersJsonReader.getChapters(view.context , R.raw.quran)
+        val list = quranChaptersJsonReader.getChapters(view.context, R.raw.quran)
 
         viewBinding.recyclerView.adapter =
-            QuranChaptersAdapter(lisss?.suras ?: emptyList()  )
+            QuranChaptersAdapter(list?.suras ?: emptyList())
 
     }
 
